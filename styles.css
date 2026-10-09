@@ -1,0 +1,365 @@
+/* Quran Heals legal pages (en, fr-CA, ar). Colors match the app's light palette (mobile/src/constants/theme.ts).
+   Direction-sensitive rules use logical properties (inline-start/end) so dir="rtl" (Arabic) mirrors the layout. */
+:root {
+  --background: #F7F2EA;
+  --surface: #FFFDF8;
+  --text: #1F2A24;
+  --text-secondary: #5F6960;
+  --accent: #617256;
+  --accent-soft: #E9EEE4;
+  --border: #E5DED2;
+  --danger: #9A4F3F;
+  --danger-soft: #F6E9E5;
+  --radius: 16px;
+  --max-width: 46rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+a:focus-visible,
+.skip-link:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: -9999px;
+  top: 0.5rem;
+  background: var(--surface);
+  padding: 0.5rem 0.75rem;
+}
+
+.skip-link:focus {
+  inset-inline-start: 0.5rem;
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .inner,
+main,
+.site-footer .inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-inline: 1.25rem;
+}
+
+.site-header .inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+.brand {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.site-nav li + li {
+  margin-top: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Language switcher: same position and style on every page; links go to the same page in the other language. */
+.lang-switch ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.lang-switch li + li {
+  margin-top: 0;
+}
+
+.lang-switch a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.15rem 0.1rem;
+}
+
+.lang-switch a[aria-current="true"] {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+}
+
+main {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text);
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 2.5rem 0 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+.meta {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+.summary {
+  background: var(--accent-soft);
+  border-color: transparent;
+}
+
+/* Darker links and no rule above the heading inside the tinted summary (olive on sage is below 4.5:1). */
+.summary a {
+  color: var(--text);
+}
+
+.summary h2 {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.important {
+  border-inline-start: 4px solid var(--danger);
+}
+
+.draft-banner {
+  background: var(--danger-soft);
+  border: 1px solid var(--danger);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: 0.75rem 1rem;
+  margin: 0 0 1.5rem;
+  font-weight: 600;
+}
+
+.todo {
+  background: #FFF3C4;
+  color: #4A3B00;
+  border-radius: 4px;
+  padding: 0 0.25rem;
+  font-weight: 600;
+}
+
+.doc-list {
+  list-style: none;
+  padding: 0;
+}
+
+.doc-list li {
+  margin: 0 0 0.75rem;
+}
+
+.doc-list a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.doc-list a:hover {
+  border-color: var(--accent);
+}
+
+.doc-list strong {
+  display: block;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+caption {
+  text-align: start;
+  font-weight: 700;
+  padding: 0.75rem 1rem 0;
+}
+
+th,
+td {
+  text-align: start;
+  vertical-align: top;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+th {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.steps li {
+  padding-inline-start: 0.25rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.site-footer .inner {
+  padding-top: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+
+.site-footer p {
+  margin: 0 0 0.4rem;
+}
+
+/* Arabic: system Arabic faces first, slightly taller lines. */
+:lang(ar) body,
+body:lang(ar) {
+  font-family: "Noto Naskh Arabic", "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", Arial, sans-serif;
+  line-height: 1.85;
+}
+
+/* Left-to-right runs inside right-to-left text: emails, URLs, verse references, product names. */
+.ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+@media (max-width: 30rem) {
+  body {
+    font-size: 1rem;
+  }
+
+  th,
+  td {
+    padding: 0.55rem 0.75rem;
+  }
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .skip-link {
+    display: none;
+  }
+
+  body {
+    background: #fff;
+  }
+}
