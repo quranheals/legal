@@ -37,20 +37,20 @@
 
     <h1>Privacy Policy</h1>
     <p class="meta">
-      Effective date: October 9, 2026<br>
+      Effective date: October 15, 2026<br>
       Operator: Hamza Labib · Contact: <a href="mailto:quranheals.support@gmail.com">quranheals.support@gmail.com</a>
     </p>
 
-    <p>Quran Heals is a mobile app that helps you find verses of the Quran connected to how you feel, save the verses that matter to you, and write private reflections. Quran Heals is published and operated by Hamza Labib (“we”, “us”).</p>
+    <p>Quran Heals is a mobile app that helps you find verses of the Quran connected to how you feel, read the Quran, save the verses that matter to you, keep track of your Wirds and Khatmahs, and write private reflections. Quran Heals is published and operated by Hamza Labib (“we”, “us”).</p>
     <p>This policy explains what information the app handles, where it is kept, who can read it, how long we keep it, and the choices you have. It applies to the Quran Heals app and to the servers that support it.</p>
 
     <section class="card summary" aria-labelledby="summary-heading">
       <h2 id="summary-heading">In short</h2>
       <ul>
         <li>Anyone can use Quran Heals without an account. Without one, what you save stays on your device.</li>
-        <li>An account is optional and is only for people aged 16 or older who also meet any higher minimum age where they live. If you sign in with Apple or Google, we store your account, favorites, preferences and encrypted reflections on our servers so they can sync between your devices.</li>
+        <li>An account is optional and is only for people aged 16 or older who also meet any higher minimum age where they live. If you sign in with Apple or Google, we store your account, favorites, preferences, Wirds and reading progress, Khatmah records, and encrypted reflections on our servers so they can sync between your devices.</li>
         <li>The text of the reflections you sync is encrypted on your device with a key protected by your sync password before it is uploaded. We cannot read it, and we cannot recover it if you forget your sync password.</li>
-        <li>Not everything is end-to-end encrypted. We can read your account details, which verses you saved or reflected on (and when), your preferences, and any issue reports or emails you send us.</li>
+        <li>Not everything is end-to-end encrypted. We can read your account details, which verses you saved or reflected on (and when), your preferences, your Wirds, reading positions and Khatmah records, and any issue reports or emails you send us.</li>
         <li>We do not sell your information, show ads, or use analytics, advertising, or tracking tools in the app.</li>
         <li>You can delete your account and synced data from the app at any time. If you can no longer use the app, you can ask us by email (section 10).</li>
       </ul>
@@ -63,11 +63,14 @@
     <ul>
       <li><strong>Reflections</strong> you write, in readable form. On your device they are protected by your device’s own security (for example, your passcode), not by an extra layer of app encryption. If the same reflection was changed on two of your devices before they synced, the other version may also be kept so you can review it.</li>
       <li><strong>Favorites</strong> (the verses you saved) and a short history of recently shown verses, used to avoid showing you the same verse again too soon.</li>
-      <li><strong>Settings</strong>: app language, Quran translation display, appearance (light or dark), and Quran text size.</li>
+      <li><strong>Settings</strong>: app language, Quran language, emotions language, appearance (System, Light, or Dark), Quran font size, and Quran translation preferences, including how translations are displayed. If you are signed in, these settings also sync with your account (section 2).</li>
+      <li><strong>Wirds and Khatmahs</strong>: your named Wirds, which Wird is selected, saved pages and reading positions, reading progress, and Khatmah completion records and history. If you are signed in, these also sync with your account (section 2).</li>
+      <li><strong>Settings and data that stay on this device only</strong> and are never synced with your account: notification preferences and schedules, the Keep Screen Awake setting, Quran content you download for offline use, whether you have seen the Mushaf first-use guide, and the last Mushaf page you browsed. The last page you browsed is different from a Wird reading position you choose to save, which does sync.</li>
       <li>A cached copy of the list of feelings, so the app works with a weak connection.</li>
       <li><strong>If you are signed in</strong>: your basic account profile (an internal account number, whether you used Apple or Google, your email address if one was provided, and when the account was created); your sign-in tokens; and, after you enter your sync password, the key that decrypts your synced reflections. The tokens and the key are kept in your device’s secure storage (the iOS Keychain or Android Keystore).</li>
     </ul>
     <p>Signing out does not delete reflections or favorites from your device; they stay there, kept separately for that account. Uninstalling the app removes the information the app stored on that device.</p>
+    <p><strong>Using the app without an account.</strong> What you save without an account (as a guest) stays on your device and is kept separate from any account. Signing in does not automatically upload your guest settings. Other guest data is added to your account only if you explicitly choose to merge it when the app offers to.</p>
 
     <h2 id="account">2. Information we store if you sign in</h2>
     <p>Signing in is optional and only needed to sync between your devices. You sign in with Sign in with Apple or Google Sign-In. We never receive your Apple or Google password.</p>
@@ -98,7 +101,17 @@
           </tr>
           <tr>
             <td>Preferences</td>
-            <td>App language, translation display setting, which translation is used, and when you last changed them. Appearance and text size are not synced.</td>
+            <td>App language, Quran language, emotions language, appearance (System, Light, or Dark), Quran font size, your Quran translation preferences (including which translation is used and how translations are displayed), and when you last changed them, so they can be restored on your other devices. Notification, Keep Screen Awake and other device-only settings (section 1) are not synced.</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Wirds and reading progress</td>
+            <td>Your named Wirds, which Wird is selected, saved pages, ayah reading positions you save, and your reading progress. The last Mushaf page you browsed is not synced.</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Khatmahs</td>
+            <td>Your Khatmah completion records and history, which can include completion dates and a Ramadan classification.</td>
             <td>Yes</td>
           </tr>
           <tr>
@@ -125,7 +138,7 @@
       <li>The first time you set up sync for your account, the app creates a random key on your device. Your reflections are encrypted with this key on your device before they are uploaded (using XChaCha20-Poly1305).</li>
       <li>That key is itself encrypted on your device with a key derived from your sync password (using PBKDF2-HMAC-SHA256). Only the encrypted key is uploaded. Your sync password and the unencrypted key never leave your device.</li>
       <li>Decryption happens only on your devices, after you enter your sync password on each one.</li>
-      <li>Encryption covers the text of your reflections only. It does not cover your account details, favorites, preferences, issue reports, or which verses you reflected on and when.</li>
+      <li>Encryption covers the text of your reflections only. It does not cover your account details, favorites, preferences, Wirds, reading positions and progress, Khatmah records, issue reports, or which verses you reflected on and when.</li>
       <li>Anyone who obtained the encrypted data could try to guess your sync password. A long, unique sync password makes this much harder.</li>
     </ul>
     <div class="card important">
@@ -156,7 +169,7 @@
     <p>We use information only to:</p>
     <ul>
       <li>provide the app, including finding verses for the feeling you choose;</li>
-      <li>if you sign in, verify your identity with Apple or Google, keep you signed in, and sync your favorites, preferences, and encrypted reflections between your devices;</li>
+      <li>if you sign in, verify your identity with Apple or Google, keep you signed in, and sync your favorites, preferences, Wirds and reading progress, Khatmah records, and encrypted reflections between your devices;</li>
       <li>keep the service secure, prevent abuse, and find and fix errors;</li>
       <li>delete your account and revoke Apple access when you ask, and keep a minimal record showing that we did (section 9);</li>
       <li>answer support emails; and</li>
@@ -215,7 +228,7 @@
     <p>Google, which provides our support mailbox, may keep residual copies of deleted emails for a limited time under its own policies. We keep a specific record longer than stated above only when it is necessary for a legal obligation, a dispute, or a security investigation, with access restricted to the operator and for a defined period that we review at least every 12 months, never indefinitely.</p>
 
     <h2 id="deletion">10. Deleting your information</h2>
-    <p>You can delete your account in the app at any time from Settings → Account → Danger Zone → Delete Account. Deletion takes effect immediately. It permanently deletes from our database your account, sessions, favorites, preferences, encrypted reflections, encrypted reflection key, and Apple revocation token, and for Apple accounts it cancels Quran Heals’ access to your Apple ID. After deletion, we keep only the limited records described in section 9.</p>
+    <p>You can delete your account in the app at any time from Settings → Account → Danger Zone → Delete Account. Deletion takes effect immediately. It permanently deletes from our database your account, sessions, favorites, preferences, Wirds and reading progress, Khatmah records, encrypted reflections, encrypted reflection key, and Apple revocation token, and for Apple accounts it cancels Quran Heals’ access to your Apple ID. After deletion, we keep only the limited records described in section 9.</p>
     <p>If you cannot use the app, you can ask us by email. We aim to acknowledge your request within 2 business days, confirm that you own the account with a one-time code sent to the email address stored on it, and complete the deletion within 30 days of receiving a valid request.</p>
     <p>Deletion in the app also removes that account’s reflections and favorites from the device you use to delete it. Copies stored on your other devices stay on those devices until you uninstall the app there. Full details are on our <a href="../delete-account/">Account &amp; Data Deletion</a> page.</p>
     <p>You can also delete individual reflections and favorites in the app at any time.</p>
