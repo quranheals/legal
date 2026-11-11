@@ -37,11 +37,11 @@
 
     <h1>Privacy Policy</h1>
     <p class="meta">
-      Effective date: October 28, 2026<br>
+      Effective date: November 11, 2026<br>
       Operator: Hamza Labib · Contact: <a href="mailto:quranheals.support@gmail.com">quranheals.support@gmail.com</a>
     </p>
 
-    <p>Quran Heals is a mobile app that helps you find verses of the Quran connected to how you feel, read the Quran, save the verses that matter to you, keep track of your Wirds and Khatmahs, and write private reflections. Quran Heals is published and operated by Hamza Labib (“we”, “us”).</p>
+    <p>Quran Heals is a mobile app that helps you find verses of the Quran connected to how you feel, read the Quran, save the verses that matter to you, keep track of your Wirds and Khatmahs, write private reflections, see prayer times and find the Qibla direction. Quran Heals is published and operated by Hamza Labib (“we”, “us”).</p>
     <p>This policy explains what information the app handles, where it is kept, who can read it, how long we keep it, and the choices you have. It applies to the Quran Heals app and to the servers that support it.</p>
 
     <section class="card summary" aria-labelledby="summary-heading">
@@ -51,7 +51,9 @@
         <li>An account is optional and is only for people aged 16 or older who also meet any higher minimum age where they live. If you sign in with Apple or Google, we store your account, favorites, settings, Wirds and reading progress, Khatmah records, recently chosen feelings, and encrypted reflections on our servers so they can sync between your devices.</li>
         <li>The text of the reflections you sync is encrypted on your device with a key protected by your sync password before it is uploaded. We cannot read it, and we cannot recover it if you forget your sync password.</li>
         <li>Not everything is end-to-end encrypted. We can read your account details, which verses you saved or reflected on (and when), your settings and reminder times, your Wirds, reading positions and Khatmah records, the feelings you chose recently, and any issue reports or emails you send us.</li>
-        <li>Recitations and the Mushaf’s page fonts come straight from third-party audio and Quran services, which see your device’s IP address and which file it asks for (section 5).</li>
+        <li>Recitations come straight from third-party audio services, which see your device’s IP address and which file it asks for (section 5).</li>
+        <li>Prayer Times and Qibla Direction use your location on your device. The location used for prayer times is saved only on your device, rounded to about 1 km; it is not sent to us or synced with your account. The app uses your location in the background only if you turn on automatic location updates and allow it (section 1).</li>
+        <li>Widgets and lock-screen notifications can show your prayer times, city, Khatmah progress, or a feeling and verse to anyone who can see your screen, even when your device is locked (section 1).</li>
         <li>We do not sell your information, show ads, or use analytics, advertising, or tracking tools in the app.</li>
         <li>You can delete your account and synced data from the app at any time. If you can no longer use the app, you can ask us by email (section 10).</li>
       </ul>
@@ -67,14 +69,46 @@
       <li><strong>Settings</strong>: app language, Quran language, emotions language, appearance (System, Light, or Dark), Quran font size, and Quran translation preferences, including how translations are displayed. If you are signed in, these settings also sync with your account (section 2).</li>
       <li><strong>Wirds and Khatmahs</strong>: your named Wirds, which Wird is selected, saved pages and reading positions, reading progress, and Khatmah completion records and history. If you are signed in, these also sync with your account (section 2).</li>
       <li><strong>Other settings</strong>: your favorite reciter, Keep Screen Awake, Word Meanings and Memorization Mode, your reminder times and schedules, which guides you have seen, and the feelings you chose recently. Newer versions of the app also sync these with your account if you are signed in (section 2); earlier versions keep them on this device only.</li>
-      <li><strong>Downloads and data that stay on this device only</strong> and are never synced with your account: notification permission, recitations and the offline Mushaf (page layouts and fonts) that you download for offline use, and the last Mushaf page you browsed. The last page you browsed is different from a Wird reading position you choose to save, which does sync.</li>
+      <li><strong>Downloads and data that stay on this device only</strong> and are never synced with your account: notification permission; recitations, the offline Mushaf (page layouts and any page-font updates) and optional Tafsir editions that you download for offline use; the default Tafsir (al-Tafsir al-Muyassar) and the English translation, which the app downloads once by itself after installation; your Prayer Times location and settings (including notification, Adhan and alarm choices); your widget settings; and the last Mushaf page you browsed (and your place in the English translation). The last page you browsed is different from a Wird reading position you choose to save, which does sync.</li>
       <li>Cached copies of the list of feelings and of one Mushaf page, so the app works with a weak connection.</li>
       <li>That you confirmed the minimum age for an account, and when (section 13).</li>
       <li><strong>If you are signed in</strong>: your basic account profile (an internal account number, whether you used Apple or Google, your email address if one was provided, and when the account was created); your sign-in tokens; and, after you enter your sync password, the key that decrypts your synced reflections. The tokens and the key are kept in your device’s secure storage (the iOS Keychain or Android Keystore).</li>
     </ul>
     <p>Signing out does not delete reflections, favorites, Wirds, Khatmah records or recent feelings from your device; they stay there, kept separately for that account. Uninstalling the app removes the information the app stored on that device. On iPhone, items kept in the Keychain (sign-in tokens and the reflection key) may remain after the app is removed, as iOS manages them.</p>
-    <p>Information on your device, including downloaded recitations and the offline Mushaf, can be included in your device’s own backups (iCloud or Google), depending on your device settings.</p>
+    <p>Information on your device, including your Prayer Times location and settings, can be included in your device’s own backups (iCloud or Google), depending on your device settings. On iPhone, the app asks iOS to leave downloaded recitations, the offline Mushaf and Tafsir out of backups.</p>
     <p><strong>Using the app without an account.</strong> What you save without an account (as a guest) stays on your device and is kept separate from any account. Signing in does not automatically upload your guest settings. Other guest data is added to your account only if you explicitly choose to merge it when the app offers to.</p>
+
+    <h3 id="location">Location, Prayer Times and Qibla Direction</h3>
+    <ul>
+      <li><strong>While you use the app.</strong> If you allow location access, the app uses your device’s location, on your device, to calculate prayer times and the Qibla direction. The Qibla Direction screen also uses your phone’s compass, only while that screen is open, and does not save your location. For Prayer Times, you can instead choose a city from a list included in the app, without giving location access.</li>
+      <li><strong>What is saved.</strong> For prayer times, the app keeps only the latest location, on your device: the city you chose, or your device’s position rounded to about 1 km together with the nearest city in the app’s list. A new location replaces the previous one; no location history is kept. The app does not look up your address with an online service, and it does not send, log or sync your location or city to our servers or to anyone else.</li>
+      <li><strong>Your phone’s location services.</strong> Your position itself is provided by your device’s operating system (Apple’s or Google’s location services), under your device settings and their own privacy policies.</li>
+      <li><strong>Optional background location.</strong> <strong>Update location automatically</strong> in Prayer Times is off by default. Only if you turn it on and then allow location access all the time (Android: “Allow all the time”; iPhone: “Always”), the app asks your phone to let it know when you leave an area of about 5 km around your saved location, even when the app is closed or not in use. The app then takes one new position, saves it as described above, and uses it to update your prayer times, prayer notifications, widgets, the lock-screen countdown and, on Android, the Smart Fajr Alarm. The app does not track your location continuously. Your phone decides when, and whether, this happens: it can be delayed or skipped, for example by battery saving, and some phones do not run it after the app has been force-stopped until you open it again.</li>
+      <li><strong>Your choices.</strong> You can turn off <strong>Update location automatically</strong>, choose a city instead (which also turns it off), or change or withdraw location access at any time in your phone’s settings. Without “all the time” access, the app never uses your location while it is closed or not in use.</li>
+    </ul>
+
+    <h3 id="prayer-notifications">Prayer notifications, Adhan and alarms</h3>
+    <ul>
+      <li>Prayer-time notifications and the Smart Fajr Alarm are off until you turn them on. The app schedules them on your device from your saved location and your Prayer Times settings (calculation method, the sound or Adhan muezzin you choose for each prayer, and the alarm time). Nothing is sent to our servers to schedule them, and these settings are not synced with your account.</li>
+      <li>The Adhan recordings are included in the app, so playing them does not use the internet. Short Adhan is available on iPhone and Android. Full Adhan is available on Android only, because iOS limits notification sounds to 30 seconds.</li>
+      <li>While Quran Heals is open on your screen, including while you read the Mushaf, a prayer-time notification is shown as a silent banner inside the app instead of playing a sound. When the app is in the background or your device is locked, your device shows a normal notification with the sound you chose.</li>
+      <li>The Smart Fajr Alarm uses your phone’s own alarm system: exact alarms on Android, and Apple’s alarms on iPhone (iOS 26 or later).</li>
+      <li>Depending on your phone, the app may ask for permission to send notifications (on iPhone, including Time Sensitive notifications), to schedule exact alarms (Android “Alarms &amp; reminders”), or to set alarms (iPhone). You can withdraw these permissions in your phone’s settings at any time; notifications and alarms may then arrive late or not at all.</li>
+    </ul>
+
+    <h3 id="widgets">Home Screen and Lock Screen widgets</h3>
+    <p>If you add Quran Heals widgets, or turn on the lock-screen countdown, they show information from the app outside it:</p>
+    <ul>
+      <li><strong>Prayer Times widgets</strong> (Small and Medium) and the <strong>iPhone Lock Screen Prayer Times widget</strong>: the next prayer, a countdown and prayer times. The Home Screen widgets can also show the name of your city (never your coordinates).</li>
+      <li><strong>My Reciting widgets</strong> (Small and Medium): your Khatmah names, the place you saved (Juz and Surah) and your reading progress.</li>
+      <li><strong>How I Feel widget</strong>: the list of feelings, the feeling you choose in the widget and verses connected to it, with a translation if you turned that on.</li>
+      <li><strong>Android lock-screen countdown</strong> (“Show next prayer on lock screen”, off by default): an ongoing notification with the next prayer and a countdown.</li>
+    </ul>
+    <p>The app writes this information to storage on your device that only Quran Heals and its widgets can read: on iPhone, a shared App Group container; on Android, the app’s private storage. The widgets themselves do not connect to the internet, and widget information is not sent to us or synced with your account. To show verse translations in the How I Feel widget, the app may download the translations of the widget’s verses from our server; that request contains only verse references.</p>
+    <div class="card important">
+      <p><strong>Anyone who can see your screen can see your widgets and lock-screen notifications</strong>, including, depending on your device settings, while your device is locked. If you do not want others to see your prayer times and city, Khatmah names, reading progress or chosen feeling, do not add those widgets, remove them, or change your lock-screen and notification settings.</p>
+    </div>
+    <p>When you sign out or delete your account, the app updates the My Reciting widgets so they no longer show that account’s Khatmahs; they show any Khatmahs saved on the device without an account instead. Prayer Times widgets and the lock-screen countdown are not linked to your account and keep working. The How I Feel widget keeps the feeling and verse it last showed until it changes them or you remove it. Removing a widget stops it from showing information, and uninstalling the app removes all widget data from the device.</p>
 
     <h2 id="account">2. Information we store if you sign in</h2>
     <p>Signing in is optional and only needed to sync between your devices. You sign in with Sign in with Apple or Google Sign-In. We never receive your Apple or Google password.</p>
@@ -165,7 +199,8 @@
       <li><strong>Requests to our server.</strong> When the app loads verses or syncs, your device connects to our server, which runs on our hosting provider. Like any internet service, this involves your IP address and basic request details (such as the address requested and the time). Our server uses your IP address briefly in memory to limit abusive traffic (for at most one hour) and does not save it to our database. Our hosting provider (Render) keeps server logs, which can include IP addresses and request details, for 7 days.</li>
       <li><strong>Feelings you choose.</strong> When you choose a feeling, the app sends it to our server to fetch a matching verse, along with recently shown verses to avoid repeats. These requests are not sent with your account details, and the request itself is not saved to our database (it can appear in the server logs for 7 days). Separately, if you are signed in, newer versions of the app sync the last 12 feelings you chose with your account (section 2).</li>
       <li><strong>Recitations.</strong> When you play or download a recitation, your device fetches the audio file directly from the service that hosts it, not through our server. That service receives your IP address, basic technical details sent by your device’s media player, and the file’s address, which shows the reciter and the surah (or verse). The hosts in this version of the app are MP3Quran (mp3quran.net), the Internet Archive (archive.org), Way2Quran (way2quran.com), Assabile (assabile.com), QuranicAudio (quranicaudio.com) and EveryAyah (everyayah.com). For MP3Quran recitations the app also fetches verse timings from mp3quran.net. We send them no account details, and their own privacy policies apply.</li>
-      <li><strong>The Mushaf.</strong> The Mushaf’s page layouts come from our server, which receives them from Quran Foundation. The page fonts are downloaded directly from Quran Foundation (verses.quran.foundation), which receives your IP address and which page is requested. Once the offline Mushaf is downloaded, the app also checks our server about once a day for updates.</li>
+      <li><strong>The Mushaf.</strong> The Mushaf’s page fonts are included in the app. Its page layouts come from our server, which receives them from Quran Foundation. Once the offline Mushaf is downloaded, the app also checks our server about once a day for updates. If a page font has to be downloaded, for example a correction, the app gets it directly from Quran Foundation (verses.quran.foundation), which receives your IP address and which page is requested.</li>
+      <li><strong>Tafsir and the English translation.</strong> The default Tafsir (al-Tafsir al-Muyassar) is not included in the app. Like the offline Mushaf, it is downloaded once from our server after installation, when your device has a connection, together with the English translation. Once a download is complete and verified, it stays on your device for offline use and is downloaded again only if the stored copy is missing or damaged. Other Tafsir editions are downloaded only if you choose them. These requests say which edition or verses are needed; they do not include your account details.</li>
       <li><strong>Error monitoring.</strong> Our server sends technical error reports to an error-monitoring service (Sentry, in the United States). These reports are set up to leave out request contents, account identifiers, email addresses, tokens, and reflection data. The mobile app does not include crash reporting or analytics.</li>
       <li><strong>App updates.</strong> The app checks for updates through Expo’s update service, which receives technical information such as the app version, platform, update channel, a random identifier for this installation that Expo creates, and your IP address.</li>
       <li><strong>Links you open.</strong> Some links, such as “Read in Quran” (which opens tanzil.net), open in your browser. Those sites’ own privacy policies apply.</li>
@@ -174,7 +209,7 @@
     <h2 id="use">6. How we use information</h2>
     <p>We use information only to:</p>
     <ul>
-      <li>provide the app, including finding verses for the feeling you choose;</li>
+      <li>provide the app, including finding verses for the feeling you choose (prayer times, the Qibla direction, notifications, alarms and widgets are worked out on your device);</li>
       <li>if you sign in, verify your identity with Apple or Google, keep you signed in, and sync your favorites, settings, Wirds and reading progress, Khatmah records, recent feelings, and encrypted reflections between your devices;</li>
       <li>keep the service secure, prevent abuse, and find and fix errors;</li>
       <li>delete your account and revoke Apple access when you ask, and keep a minimal record showing that we did (section 9);</li>
@@ -196,7 +231,7 @@
           <tr><td>Render (US West)</td><td>Hosts our server</td><td>Requests to our server, including IP addresses (logs kept 7 days)</td></tr>
           <tr><td>MongoDB Atlas (AWS, Oregon, United States)</td><td>Hosts our database</td><td>The information in section 2 and issue reports</td></tr>
           <tr><td>Expo (EAS Update)</td><td>Delivers app updates</td><td>App version, platform, update channel, installation identifier, IP address</td></tr>
-          <tr><td>Quran Foundation</td><td>Mushaf page layouts (through our server) and page fonts (directly to your device)</td><td>For fonts: IP address and the page requested</td></tr>
+          <tr><td>Quran Foundation</td><td>Mushaf page layouts (through our server) and any page-font downloads (directly to your device)</td><td>For fonts: IP address and the page requested</td></tr>
           <tr><td>MP3Quran, Internet Archive, Way2Quran, Assabile, QuranicAudio, EveryAyah</td><td>Host the recitations the app plays and downloads</td><td>IP address, media-player details, and the file requested (reciter, surah or verse)</td></tr>
           <tr><td>Sentry (United States)</td><td>Server error monitoring</td><td>Filtered technical error details</td></tr>
           <tr><td>Google (Gmail)</td><td>Our support mailbox, quranheals.support@gmail.com</td><td>Emails you send us, including deletion requests</td></tr>
@@ -238,7 +273,7 @@
     <h2 id="deletion">10. Deleting your information</h2>
     <p>You can delete your account in the app at any time from Settings → Account → Danger Zone → Delete Account. Deletion takes effect immediately. It permanently deletes from our database your account, sessions, favorites, settings and recent feelings, Wirds and reading progress, Khatmah records, encrypted reflections, encrypted reflection key, and Apple revocation token, and for Apple accounts it cancels Quran Heals’ access to your Apple ID. After deletion, we keep only the limited records described in section 9.</p>
     <p>If you can no longer use the app on your old device, you can install it on any phone, sign in with the same Apple or Google account, and delete your account there. You can also ask us by email. We aim to reply within 2 business days. We must confirm that you own the account before deleting it, and our process for confirming this by email is not available yet. Until it is, we will keep your request and help you delete your account in the app. Our <a href="../delete-account/">Account &amp; Data Deletion</a> page has the details and will be updated when email verification is available.</p>
-    <p>Deletion in the app also removes that account’s reflections, favorites, Wirds, Khatmah records and recent feelings from the device you use to delete it; settings such as language and appearance, and downloads, stay on that device. Copies stored on your other devices stay on those devices until you uninstall the app there. Full details are on our <a href="../delete-account/">Account &amp; Data Deletion</a> page.</p>
+    <p>Deletion in the app also removes that account’s reflections, favorites, Wirds, Khatmah records and recent feelings from the device you use to delete it; settings such as language and appearance, your Prayer Times location and settings, widget settings, and downloads stay on that device, as they are not linked to your account. Copies stored on your other devices stay on those devices until you uninstall the app there. Full details are on our <a href="../delete-account/">Account &amp; Data Deletion</a> page.</p>
     <p>You can also delete individual reflections and favorites in the app at any time.</p>
 
     <h2 id="security">11. Security</h2>
@@ -258,6 +293,8 @@
     <ul>
       <li>use Quran Heals without an account, and send issue reports without an email address;</li>
       <li>delete your account in the app at any time (section 10);</li>
+      <li>use Prayer Times with a city you choose instead of your location, turn off <strong>Update location automatically</strong>, and withdraw location, notification and alarm permissions in your phone’s settings;</li>
+      <li>remove widgets, and turn off the lock-screen countdown, at any time;</li>
       <li>remove Quran Heals’ access in your Apple ID or Google Account settings (this does not by itself delete your Quran Heals data); and</li>
       <li>email <a href="mailto:quranheals.support@gmail.com">quranheals.support@gmail.com</a> for any other request, including access to, correction or deletion of your information or an issue report.</li>
     </ul>
